@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: random-words-api
+
+  data:
+    mongodb:
+      host: ${MONGO_HOST:localhost}
+      database: random_words
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health
